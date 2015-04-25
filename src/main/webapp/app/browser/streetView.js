@@ -23,5 +23,3 @@ function initializeViews() {
         document.getElementById('map'), mapOptions);
     var panorama = createPanorama(document.getElementById('panorama'), map, 150);
 }
-
-//google.maps.event.addDomListener(window, 'load', initialize);
