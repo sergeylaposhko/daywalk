@@ -3,7 +3,7 @@ angular.module('daywalk', [
 	'daywalk.browser'
 ]).
 config(['$routeProvider', function($routeProvider) {
-	$routeProvider.otherwise({
-		redirectTo: '/browser'
+	$routeProvider.when("/", {
+		redirectTo: '/'
 	});
 }]);
