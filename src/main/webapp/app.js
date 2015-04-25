@@ -2,8 +2,9 @@ angular.module('daywalk', [
 	'ngRoute',
 	'daywalk.browser'
 ]).
-config(['$routeProvider', function($routeProvider) {
+config(['$routeProvider','$compileProvider', function($routeProvider,$compileProvider) {
 	$routeProvider.when("/", {
-		redirectTo: '/'
+		redirectTo: '/browser'
 	});
+    $compileProvider.debugInfoEnabled(false);
 }]);

@@ -1,0 +1,19 @@
+a[href^="http://maps.google.com/maps"]{display:none !important}
+.gmnoprint a, .gmnoprint span {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+html, body, #map {
+    height: 100%;
+    margin: 0px;
+    padding: 0px
+}
+
+.map-element {
+    width: 50% !important;
+    height: 100% !important;
+    float: left !important;
+    z-index: 10 !important;
+}
