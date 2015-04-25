@@ -16,12 +16,6 @@ a[href^="http://maps.google.com/maps"]{display:none !important}
     right: 0;
 }
 
-html, body, #map {
-    height: 100%;
-    margin: 0px;
-    padding: 0px
-}
-
 .map-element {
     width: 50%;
     height: 100%;
@@ -29,4 +23,10 @@ html, body, #map {
     z-index: 9;
     position: inherit !important;
     transform: inherit !important;
+}
+.show-me-small{
+    width:10%;
+    height:20%;
+    z-index: 100 !important;
+    position: absolute !important;
 }
