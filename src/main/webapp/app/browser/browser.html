@@ -2,7 +2,9 @@
 
 <!-- Dropdown Structure -->
 <div id="point-info" class='dropdown-content'>
-    here will be some content
+    {{title}}<br/>
+    {{description}}<br/>
+    
 </div>
 
 <div id="map" class="show-me-small"></div>
@@ -16,7 +18,7 @@
                 outDuration: 225,
                 constrain_width: false, // Does not change width of dropdown to that of the activator
                 gutter: 0, // Spacing from edge
-                belowOrigin: false // Displays dropdown below the button
+                belowOrigin: true // Displays dropdown below the button
             }
     );
 </script>
