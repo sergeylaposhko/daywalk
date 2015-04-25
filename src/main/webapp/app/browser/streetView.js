@@ -14,8 +14,9 @@ function createPanorama(viewElement, map, angle) {
 }
 
 
-function initializeViews() {
-    var markers = [
+function initializeViews(res) {
+    var markers = res["points"];
+    /*var markers = [
             {
                 "title": 'Alibaug',
                 "lat": '49.989727',
@@ -36,9 +37,9 @@ function initializeViews() {
                 "lng": '36.233553',
                 "description": '3'
             }
-    ];
+    ];*/
     var mapOptions = {
-            center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
+            center: new google.maps.LatLng(markers[0].latitude, markers[0].longitude),
             zoom: 15,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             disableDefaultUI: true,
@@ -51,7 +52,7 @@ function initializeViews() {
     var latlngbounds = new google.maps.LatLngBounds();
     for (i = 0; i < markers.length; i++) {
         var data = markers[i]
-        var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+        var myLatlng = new google.maps.LatLng(data.latitude, data.longitude);
         lat_lng.push(myLatlng);
         var marker = new google.maps.Marker({
             position: myLatlng,
@@ -127,12 +128,12 @@ function initializeViews() {
                 step: function(  ){
                    google.maps.event.trigger(map,'resize');
                    map.setZoom(15);      // This will trigger a zoom_changed on the map
-                   map.setCenter(new google.maps.LatLng(markers[0].lat, markers[0].lng));
+                   map.setCenter(new google.maps.LatLng(markers[0].latitude, markers[0].longitude));
                 },
                 complete: function() {
                     google.maps.event.trigger(map,'resize');
                     map.setZoom(15);      // This will trigger a zoom_changed on the map
-                    map.setCenter(new google.maps.LatLng(markers[0].lat, markers[0].lng));
+                    map.setCenter(new google.maps.LatLng(markers[0].latitude, markers[0].longitude));
                     isResising = false;
                 }
             });

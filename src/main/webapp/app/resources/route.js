@@ -42,6 +42,7 @@ resources.factory('Route', function($resource) {
 					videoUrl: "https://www.youtube.com/watch?v=48bIZoOQSSI",
 				}
 			]
-  		}
+  		};
   	}
   }
+})
