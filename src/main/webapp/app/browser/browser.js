@@ -9,7 +9,11 @@ angular.module('daywalk.browser', ['ngRoute'])
 	});
 })
 
-.controller('BrowserController', ['$scope', function($scope) {
+.controller('BrowserController', ['$scope', 'Route', function($scope, route) {
 	$scope.testData = "Hello from angular";
     initializeViews();
+
+    var res = route.get({id:8}, function() {
+    	console.log(res);
+    });
 }]);
