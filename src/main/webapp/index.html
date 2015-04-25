@@ -16,9 +16,13 @@
   <script src="lib/materialize/js/materialize.min.js"></script>
   <link rel="stylesheet" href="lib/materialize/css/materialize.min.css">
 
+  <!-- Google Maps-->
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+
   <!-- Modules -->
   <script src="app.js"></script>  
   <script src="app/browser/browser.js"></script>
+  <script src="app/browser/streetView.js"></script>
 
   <title>day walk</title>
 
@@ -27,6 +31,14 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
+
+  <style>
+      html, body, #map {
+          height: 100%;
+          margin: 0px;
+          padding: 0px
+      }
+  </style>
 </head>
 <body>
 </body>

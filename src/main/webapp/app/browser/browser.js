@@ -10,7 +10,6 @@ angular.module('daywalk.browser', ['ngRoute'])
 }])
 
 .controller('BrowserController', ['$scope', function($scope) {
-
 	$scope.testData = testData;
-
+    initializeViews();
 }]);
