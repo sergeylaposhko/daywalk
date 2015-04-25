@@ -1,3 +1,4 @@
+/* Google branding deleting stuff */
 a[href^="http://maps.google.com/maps"]{display:none !important}
 .gmnoprint a, .gmnoprint span {
     display:none;
@@ -5,15 +6,27 @@ a[href^="http://maps.google.com/maps"]{display:none !important}
 .gmnoprint div {
     background:none !important;
 }
-html, body, #map {
-    height: 100%;
-    margin: 0px;
-    padding: 0px
+
+/* Main content */
+#dropdown-button, #point-info {
+    z-index: 100 !important;
+    position: absolute !important;
+    margin-top: 2%;
+    margin-right: 2%;
+    right: 0;
 }
 
 .map-element {
-    width: 50% !important;
-    height: 100% !important;
-    float: left !important;
-    z-index: 10 !important;
+    width: 50%;
+    height: 100%;
+    float: left;
+    z-index: 9;
+    position: inherit !important;
+    transform: inherit !important;
+}
+.show-me-small{
+    width:10%;
+    height:20%;
+    z-index: 100 !important;
+    position: absolute !important;
 }
