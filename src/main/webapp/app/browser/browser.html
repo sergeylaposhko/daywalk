@@ -1,0 +1,22 @@
+<button id="dropdown-button" class="dropdown-button btn" data-activates="point-info"></button>
+
+<!-- Dropdown Structure -->
+<div id="point-info" class='dropdown-content'>
+    here will be some content
+</div>
+
+<div id="map" class="map-element"></div>
+<div id="panorama" class="map-element"></div>
+
+<link rel="stylesheet" href="browser.css">
+
+<script>
+    $('.dropdown-button').dropdown({
+                inDuration: 300,
+                outDuration: 225,
+                constrain_width: false, // Does not change width of dropdown to that of the activator
+                gutter: 0, // Spacing from edge
+                belowOrigin: false // Displays dropdown below the button
+            }
+    );
+</script>
