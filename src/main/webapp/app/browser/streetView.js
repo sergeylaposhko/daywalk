@@ -3,6 +3,7 @@ function createPanorama(viewElement, map, angle) {
         position: map.getCenter(),
         linksControl: false,
         addressControl: false,
+        clickToGo: false,
         pov: {
             heading: angle,
             pitch: 10
