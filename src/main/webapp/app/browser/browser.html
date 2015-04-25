@@ -1,2 +1,23 @@
-    <div id="map" style="width: 45%; height: 100%; float: left"></div>
-    <div id="panorama" style="width: 45%; height: 100%; float: left"></div>
+<link rel="stylesheet" href="browser.css">
+
+
+<button id="dropdown-button" class="dropdown-button btn" data-activates="dropdown1"></button>
+
+  <!-- Dropdown Structure -->
+  <div id='dropdown1' class='dropdown-content'>
+    here will be some content
+  </ul>
+
+<div id="map" style="width: 45%; height: 100%; float: left"></div>
+<div id="panorama" style="width: 45%; height: 100%; float: left"></div>
+
+<script>
+	$('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrain_width: false, // Does not change width of dropdown to that of the activator
+      gutter: 0, // Spacing from edge
+      belowOrigin: false // Displays dropdown below the button
+    }
+  );
+</script>
